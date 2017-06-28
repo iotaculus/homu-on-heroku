@@ -1,3 +1,2 @@
 -e git://github.com/servo/homu.git@0dfb10ca20aa10548494797b4f27b2644f612449#egg=homu
--r runtime.txt
 Jinja2==2.9

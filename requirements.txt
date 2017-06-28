@@ -1,2 +1,2 @@
--e git://github.com/servo/homu.git@ff3f43f5dec8709df9dcad89996cdd72ccc4b651#egg=homu
-Jinja2==2.8
+-e git://github.com/servo/homu.git@3df1ce3708adee0437909bdc24e7caabac6582d5#egg=homu
+Jinja2==2.9

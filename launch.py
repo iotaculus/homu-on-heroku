@@ -11,6 +11,7 @@ with open('cfg.template.toml') as f:
 ssh_key = os.environ.get('GIT_SSH_KEY', '')
 admin_secret = os.environ.get('HOMU_WEB_SECRET', '')
 sync_on_start = os.environ.get('SYNC_ON_START', 'false')
+git_linear = os.environ.get('GIT_LINEAR', 'false')
 
 repos = {}
 
@@ -33,6 +34,7 @@ def append(slug, ci):
             'name': name,
             'owner': owner,
             'slug': slug,
+            'linear': git_linear,
             'travis': True if ci == 'travis' else False,
             'solano': True if ci == 'solano' else False,
         }
